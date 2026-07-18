@@ -14,48 +14,59 @@ public class Employee {
 
     /**
      * Construct an employee with the given name, salary and hire date.
-     * @param name the employee name
+     * 
+     * @param name   the employee name
      * @param salary the employee salary
-     * @param year the hire year
-     * @param month the hire month
-     * @param day the hire day
+     * @param year   the hire year
+     * @param month  the hire month
+     * @param day    the hire day
      */
     public Employee(String name, double salary, int year, int month, int day) {
         this.name = name;
         this.salary = salary;
         hireDay = LocalDate.of(year, month, day);
     }
+
     /**
      * Get the employee name.
+     * 
      * @return the employee name
      */
     public String getName() {
         return name;
     }
+
     /**
      * Get the employee salary.
+     * 
      * @return the employee salary
      */
     public double getSalary() {
         return salary;
     }
+
     /**
      * Get the employee hire day.
+     * 
      * @return the employee hire day
      */
     public LocalDate getHireDay() {
         return hireDay;
     }
+
     /**
      * Raise the salary of this employee by a certain percentage.
+     * 
      * @param byPercent the percentage by which to raise the salary
      */
     public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
     }
+
     /**
      * Test whether two employees are equal
+     * 
      * @param otherObject the object to test equality with
      * @return true if this object is equal to the otherObject
      */
@@ -80,15 +91,19 @@ public class Employee {
                 && Objects.equals(hireDay, other.hireDay);
 
     }
+
     /**
      * Get the hash code of this employee.
+     * 
      * @return the hash code
      */
     public int hashCode() {
         return Objects.hash(name, salary, hireDay);
     }
+
     /**
      * Get the string representation of this employee.
+     * 
      * @return the string representation
      */
     public String toString() {
