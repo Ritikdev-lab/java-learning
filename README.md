@@ -111,13 +111,13 @@ Replace the URL with your actual GitHub repository.
 
 Using the Maven Wrapper (recommended):
 
-**Linux/macOS**
+### Linux/macOS
 
 ```bash
 ./mvnw clean compile
 ```
 
-**Windows**
+### Windows
 
 ```cmd
 mvnw.cmd clean compile
