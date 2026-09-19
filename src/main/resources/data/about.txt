@@ -1,0 +1,4 @@
+[Name] = Ritik kumar sabat
+[Age] = 19
+[Class] = +3 3rd year commerce
+[Hobby] = Coding, Playing, Reading
