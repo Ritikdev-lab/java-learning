@@ -189,6 +189,7 @@ public class AccountSimulator {
  *       op.deposit(1200);
  *       op.withdraw(120);
  *       }
+ * </pre>
  * @since 1.0
  * @author Ritikdev-lab
  */
